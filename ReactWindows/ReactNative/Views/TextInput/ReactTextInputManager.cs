@@ -536,6 +536,12 @@ namespace ReactNative.Views.TextInput
             if (commandId == FocusTextInput)
             {
                 view.Focus(FocusState.Programmatic);
+
+                // Open the touch keyboard if the 
+                if (UIViewSettings.GetForCurrentView().UserInteractionMode == UserInteractionMode.Touch)
+                {
+                    InputPane.GetForCurrentView().TryShow();
+                }
             }
             else if (commandId == BlurTextInput)
             {
