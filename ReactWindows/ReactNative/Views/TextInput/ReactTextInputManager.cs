@@ -13,6 +13,7 @@ using ReactNative.Views.Text;
 using System;
 using Windows.System;
 using Windows.UI.Text;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
